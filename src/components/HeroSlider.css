@@ -1,0 +1,71 @@
+.swiper-slide img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+  }
+.img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .swiper-container {
+    margin: 10px;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    color: #000000;
+}  
+
+.swiper-slide img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+.img{
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.swiper-container {
+  margin: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #000000;
+}  
+
+
+/* Slider Container */
+.slider-container {
+width: 80%;
+margin: 20px auto;
+}
+
+/* Swiper Slide */
+.swiper-slide {
+text-align: center;
+/*cursor: pointer;*/
+transition: transform 0.3s;
+}
+/*
+.swiper-slide:hover {
+transform: scale(1.1);
+}
+
+/* Anime Image */
+.slider-image {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+/* Anime Name */
+.anime-name {
+margin-top: 10px;
+font-size: 18px;
+font-weight: bold;
+color: white;
+}
