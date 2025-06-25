@@ -1,0 +1,40 @@
+.anime-row {
+  margin: 20px;
+}
+
+.anime-row h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 10px;
+}
+
+.row__poster {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.row__poster:hover {
+  transform: scale(1.1);
+}
+
+.anime-video {
+  width: 200px;
+  height: 120px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
