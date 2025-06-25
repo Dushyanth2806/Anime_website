@@ -1,0 +1,42 @@
+.anime-row {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.anime-row h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.anime-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.anime-image {
+  flex: 1 1 0;
+  max-width: 200px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.anime-image:hover {
+  transform: scale(1.08);
+}
+
+.anime-video {
+  width: 200px;
+  height: 120px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}

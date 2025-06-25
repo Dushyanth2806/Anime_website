@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Episodes</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .video-container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .episodes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .episode {
+            background-color: #ffcc00;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .episode:hover {
+            background-color: #ffa500;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Watch Anime Episodes</h1>
+
+    <div class="video-container">
+        <video id="animeVideo" controls src="videos/episode1.mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="episodes">
+        <span class="episode" onclick="changeEpisode(1)">Episode 1</span>
+        <span class="episode" onclick="changeEpisode(2)">Episode 2</span>
+        <span class="episode" onclick="changeEpisode(3)">Episode 3</span>
+        <span class="episode" onclick="changeEpisode(4)">Episode 4</span>
+        <span class="episode" onclick="changeEpisode(5)">Episode 5</span>
+        <span class="episode" onclick="changeEpisode(6)">Episode 6</span>
+        <span class="episode" onclick="changeEpisode(7)">Episode 7</span>
+        <span class="episode" onclick="changeEpisode(8)">Episode 8</span>
+        <span class="episode" onclick="changeEpisode(9)">Episode 9</span>
+        <span class="episode" onclick="changeEpisode(10)">Episode 10</span>
+    </div>
+
+    <script>
+        function changeEpisode(epNumber) {
+            let videoPlayer = document.getElementById("animeVideo");
+            videoPlayer.src = "videos/episode" + epNumber + ".mp4";
+            videoPlayer.play();
+        }
+    </script>
+
+</body>
+</html>

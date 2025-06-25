@@ -1,0 +1,19 @@
+anime-website/
+│── backend/                  # Spring Boot Backend
+│   ├── src/main/java/com/anime
+│   │   ├── controllers/       # REST Controllers
+│   │   ├── models/            # Entity Classes
+│   │   ├── repositories/      # JPA Repositories
+│   │   ├── services/          # Business Logic
+│   ├── src/main/resources/
+│   │   ├── application.properties  # MySQL Configuration
+│── frontend/                  # Node.js Frontend (React)
+│   ├── public/                 # Static Files
+│   ├── src/                    # React Components
+│   │   ├── components/         # Reusable UI components
+│   │   ├── pages/              # Pages (Anime List, Player, etc.)
+│   │   ├── App.js              # Main Entry
+│   │   ├── index.js            # React Entry Point
+│   ├── package.json            # Dependencies
+│── database/                   # SQL Scripts
+│   ├── schema.sql               # Table Definitions
